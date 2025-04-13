@@ -2,10 +2,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
+    <title>Book Reviews</title>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    These are the books I read this year at the rate of one book per week
+    <div class="header">
+        <a href="#default">Quiet Nook</a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="books.html">Book Reviews</a>
+          <a href="/webprojects.html">Web Projects</a> 
+          <a href="/contact.html">About</a>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10">
+               <div class="hero-image"> 
+                 <img src="img/books_banner.png" alt="book banner"> 
+                </div> 
+            </div>
+        </div>
+    </div>
+   
+    <div class="row">
+         <div class="col-lg-8 col-md-10">
+            <div class="page-content">
+                <div class="intro-text">
+                    <h2>One book a week</h2>
+                    <p>I am on a reading challenge to read one book a week for a year. Here are the books classified by month, along with a brief review.</p>
+                    <h3>April</h3>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    
+
+    <button class="accordion">In the Country of Deceit - Shashi Deshpande</button>
+    <div class="panel">
+      <p>A young girl begins an adulterous relationship with a married police officer knowing well that it is not likely to last and that it is deceitful. Despite these misgivings, she  falls in love with the man. How these actions affect her and those around her is the crux of the story. A retired actress trying to get back into the film industry and an issue of land grabbing are sub plots.</p>
+    </div>
+    
+    <button class="accordion">Book2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion">Pride and Prejudice - Jane Austen</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-10">
+                  <p class="copyright">Copyright &copy; sheabraham 2025</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
     
 </body>
 </html>
